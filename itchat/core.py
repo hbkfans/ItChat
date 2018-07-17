@@ -455,5 +455,9 @@ class Core(object):
         return self.storageClass.search_chatrooms(name, userName)
     def search_mps(self, name=None, userName=None):
         return self.storageClass.search_mps(name, userName)
+    def set_proxy(self, proxy_type=None, proxy=None):
+        if proxy_type not in ['https', ]:
+            raise r'unsupport proxy type, try an https proxy..'
+        self.s.proxies = {proxy_type: proxy}
 
 load_components(Core)

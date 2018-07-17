@@ -65,3 +65,4 @@ search_friends              = originInstance.search_friends
 search_chatrooms            = originInstance.search_chatrooms
 search_mps                  = originInstance.search_mps
 set_logging                 = set_logging
+set_proxy                   = originInstance.set_proxy
